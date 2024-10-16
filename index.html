@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan's Work</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('a.png'); /* Replace with your background image file */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .terminal {
+      background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+      backdrop-filter: blur(100px); /* Adds the blur effect */
+      color: #00FF00;
+      font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      height: 100vh;
+      width: 1000vh;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+    }
+
+    .terminal pre {
+      margin: 0;
+      white-space: pre-wrap;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background-color: #00FF00;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* Style the content that mimics terminal input */
+    .command .input-line {
+      margin: 8px 0;
+    }
+
+    .projects {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .projects ul {
+      list-style-type: none;
+    }
+
+    .projects ul li {
+      margin: 5px 0;
+    }
+
+    .projects a {
+      color: #00FF00;
+      text-decoration: none;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <pre>Last login: Thu Oct 17 01:13:52 on ttys001</pre>
+    <pre>(base) rohan.m@RohanMs-MacBook-Air ~ %</pre>
+    <div class="command">
+      <div class="input-line">
+        <span>(base) rohan.m@RohanMs-MacBook-Air ~ %</span> show_projects
+      </div>
+      <div class="projects">
+        <ul>
+          <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1 - GoLang Kubernetes Operator</a></li>
+          <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2 - AWS Lambda with JSON Response</a></li>
+          <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3 - gRPC with GoLang</a></li>
+          <li><a href="https://github.com/yourusername/project4" target="_blank">Project 4 - Python S3 Tar Extraction</a></li>
+          <li><a href="https://github.com/yourusername/project5" target="_blank">Project 5 - ECS Fargate API</a></li>
+        </ul>
+      </div>
+      <div class="input-line">
+        <span>(base) rohan.m@RohanMs-MacBook-Air ~ %</span><span class="cursor"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
